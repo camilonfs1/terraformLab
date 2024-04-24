@@ -3,8 +3,8 @@ provider "google" {
   region      = "us-central1" # Cambia según tu región preferida
 }
 
-resource "google_cloud_run_service" "my_service" {
-  name     = "my-cloud-run-service"
+resource "google_cloud_run_service" "isbn-users-ms" {
+  name     = "isbn-users-m"
   location = "us-central1" # Cambia según tu región preferida
 
   template {
@@ -17,7 +17,7 @@ resource "google_cloud_run_service" "my_service" {
 }
 
 resource "google_sql_database_instance" "default" {
-  name             = "my-cloud-sql-instance"
+  name             = "isbn-users-db"
   database_version = "POSTGRES_13"
   region           = "us-central1" # Cambia según tu región preferida
 
