@@ -4,7 +4,7 @@ provider "google" {
 }
 
 resource "google_cloud_run_service" "isbn-users-ms" {
-  name     = "isbn-users-m"
+  name     = "isbn-users-ms"
   location = "us-central1" # Cambia según tu región preferida
 
   template {
