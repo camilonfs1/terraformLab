@@ -1,5 +1,5 @@
 output "cloud_run_service_url" {
-  value = google_cloud_run_service.my_service.status[0].url
+  value = google_cloud_run_service.isbn-users-ms.status[0].url
 }
 
 output "cloud_sql_instance_ip_address" {
