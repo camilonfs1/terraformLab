@@ -3,5 +3,5 @@ output "cloud_run_service_url" {
 }
 
 output "cloud_sql_instance_ip_address" {
-  value = google_sql_database_instance.default.ip_address
+  value = google_sql_database_instance.isbn-users-db.ip_address
 }
